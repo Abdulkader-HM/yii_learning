@@ -47,7 +47,9 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [],
+            'rules' => [
+                'test-yii/site/test-html' => 'site/test_html',
+            ],
         ],
 
     ],
