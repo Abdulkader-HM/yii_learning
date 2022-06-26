@@ -44,6 +44,7 @@ AppAsset::register($this);
                 ['label' => 'Contact', 'url' => ['/site/contact']],
                 ['label' => 'hello', 'url' => ['/site/hello']],
                 ['label' => 'say page', 'url' => ['/site/say']],
+                ['label' => 'Products page', 'url' => ['/site/products']],
                 Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]
                 ) : ('<li>'
                     . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])

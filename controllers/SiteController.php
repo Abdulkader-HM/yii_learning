@@ -1,4 +1,4 @@
-``<?php
+<?php
 
 namespace app\controllers;
 
@@ -144,6 +144,7 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
             Yii::$app->session->setFlash("success", "data saved successfully");
+            
         }
         return $this->render('productForm', ['model' => $model]);
     }
