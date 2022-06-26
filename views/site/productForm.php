@@ -5,9 +5,9 @@ use yii\widgets\ActiveForm;
 ?>
 
 <?php
-// if (Yii::$app->session->hasFlash("success")) {
-//     echo Yii::$app->session->getFlash("success");
-// }
+if (Yii::$app->session->hasFlash("success")) {
+    echo Yii::$app->session->getFlash("success");
+}
 ?>
 
 <?php $form = ActiveForm::begin(); ?>

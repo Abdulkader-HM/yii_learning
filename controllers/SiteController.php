@@ -10,6 +10,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\ProductForm;
+use Codeception\Step\Retry;
+use yii\helpers\Url;
 
 class SiteController extends Controller
 {
@@ -144,8 +146,12 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
             Yii::$app->session->setFlash("success", "data saved successfully");
-            
         }
         return $this->render('productForm', ['model' => $model]);
+    }
+
+    public function actionTest_html()
+    {
+        return $this->render('test-html');
     }
 }
