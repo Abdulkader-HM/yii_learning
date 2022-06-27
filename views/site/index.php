@@ -2,12 +2,29 @@
 
 /** @var yii\web\View $this */
 
+use yii\helpers\Url;
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent">
         <h1 class="display-4">Congratulations!</h1>
+
+        <!-- need to check -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+        <!-- test link send to login page -->
+        <a href="<?php echo Url::to(['/site/just/test/link/', "id" => 100]); ?>">test</a>
+
+        <!-- test link to send parameters -->
+        <a href= "<?php echo Url::to(['sum', 'param1' => '1', 'param2' => '1']);?>" >link2</a>
+
+        <a href="<?php echo Url::to(['test']); ?>">new</a>
+
+        <a href= "<?php echo Url::to(['print', 'param1' => 'amer']);?>" >Print</a>
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

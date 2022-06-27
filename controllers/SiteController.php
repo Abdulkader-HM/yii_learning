@@ -154,4 +154,17 @@ class SiteController extends Controller
     {
         return $this->render('test-html');
     }
+
+    // need to check
+    //--------------------------------------------------------------------------------
+    public function actionSum($num1, $num2)
+    {
+        return $num1 + $num2;
+    }
+
+    public function actionPrint($print)
+    {
+        return $print;
+    }
+    //--------------------------------------------------------------------------------
 }

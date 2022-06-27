@@ -49,6 +49,10 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'test-yii/site/test-html' => 'site/test_html',
+                '/site/just/test/link' => 'site/login',
+                '<action>' =>"/site/<action>",
+                // 'post/<id:\d+>' => 'post/view',
+
             ],
         ],
 
